@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  padding: 30px;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+body{
+  background-color: rgb(241, 233, 233);
+}
+
+.search {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid gray;
+  padding: 3px 10px 4px;
+  font-size: 12px;
+  font-size: 1.14285714rem;
+  color: #2f353e;
+  background: #fff;
+  outline: none !important;
+}
+
+.btn-search {
+  color: #fff !important;
+  background: red;
+  max-width: 200px;
+  display: inline-block;
+  position: relative;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  border: 0 none;
+  text-decoration: none;
+  box-sizing: border-box;
+  user-select: none;
+  box-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  white-space: nowrap;
+}
+
+.cards {
+  padding-top: 30px;
+}
+
+.card {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px #ea00ff solid;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "h3 h3 h3" "price price logo";
+
+  .price {
+    grid-area: price;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    .toMagaz {
+      text-decoration: none;
+      color: #fff !important;
+      background: #0906c3;
+      display: inline-block;
+      position: relative;
+      padding: 15px 25px;
+      font-size: 17px;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      border: 0 none;
+      text-decoration: none;
+      box-sizing: border-box;
+      user-select: none;
+      box-shadow: 0 0 0 rgb(0 0 0 / 0%);
+      white-space: nowrap;
+    }
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .logo{
+    grid-area: logo;
+    width: 200px;
+    max-height: 100px;
+    height: auto;
+  }
+
+  h3 {
+    grid-area: h3;
+    margin: 0;
+    text-align: left;
+    a {
+      font-size: 25px;
+      color: rgb(0, 0, 0) !important;
+      line-height: 1.2;
+      text-decoration: none !important;
+    }
+  }
+}
